@@ -1,4 +1,5 @@
 <template>
+  <Head title="Approval queue" />
   <section class="flex flex-col gap-8">
     <header class="space-y-2">
       <h1 class="text-2xl font-semibold text-white">Scheduling preferences</h1>
@@ -84,14 +85,12 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue';
-import { useHead } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
 
 import AppShell from '@/components/common/AppShell.vue';
 import { useSettingsStore } from '@/stores/settings';
 
 defineOptions({ layout: AppShell });
-useHead({ title: 'Settings' });
-
 const settings = useSettingsStore();
 
 const workingStart = ref(settings.workingHours.start);

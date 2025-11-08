@@ -1,4 +1,5 @@
 <template>
+  <Head title="Approval queue" />
   <section class="flex flex-col gap-6">
     <ApprovalQueue
       :events="proposedEvents"
@@ -13,7 +14,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useHead } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
 
 import ApprovalQueue from '@/components/approval/ApprovalQueue.vue';
 import ActionPlanDiff from '@/components/approval/ActionPlanDiff.vue';
@@ -21,7 +22,6 @@ import AppShell from '@/components/common/AppShell.vue';
 import { useEventsStore } from '@/stores/events';
 import type { ActionPlanDiff as ActionPlanDiffType, EventModel } from '@/types';
 
-useHead({ title: 'Approval queue' });
 defineOptions({ layout: AppShell });
 
 const eventsStore = useEventsStore();
