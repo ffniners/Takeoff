@@ -1,4 +1,5 @@
 <template>
+  <Head title="Approval queue" />
   <section class="flex flex-col gap-6">
     <FilterBar
       ref="filterBarRef"
@@ -50,7 +51,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, reactive, ref, watch } from 'vue';
 import { addDays, isAfter, isBefore, isWithinInterval, parseISO, startOfDay, startOfToday } from 'date-fns';
-import { useHead } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
 
 import AppShell from '@/components/common/AppShell.vue';
 import FilterBar from '@/components/common/FilterBar.vue';
@@ -64,8 +65,6 @@ import type { EventModel, EventStatus, Priority } from '@/types';
 import { eventOverlapsRange } from '@/utils/date';
 
 defineOptions({ layout: AppShell });
-
-useHead({ title: 'Calendar' });
 
 const eventsStore = useEventsStore();
 const settings = useSettingsStore();
