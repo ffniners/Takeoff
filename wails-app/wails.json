@@ -1,0 +1,25 @@
+{
+  "name": "Takeoff",
+  "shortname": "takeoff",
+  "description": "Takeoff desktop prototype",
+  "version": "0.1.0",
+  "author": {
+    "name": "Takeoff",
+    "email": "",
+    "website": ""
+  },
+  "frontend": {
+    "dir": "frontend",
+    "install": "npm install",
+    "build": "npm run build",
+    "devServerUrl": "",
+    "devServerPort": 5173
+  },
+  "platform": {
+    "darwin": {
+      "appicon": {
+        "path": ""
+      }
+    }
+  }
+}
