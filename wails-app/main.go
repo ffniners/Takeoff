@@ -35,9 +35,9 @@ func main() {
 		},
 		Mac: &mac.Options{
 			TitleBar: &mac.TitleBar{
-				HiddenInset: true,
+				HideTitleBar: true,
 			},
-			Appearance: mac.NSAppearanceNameVibrantDark,
+			Appearance: mac.NSAppearanceNameDarkAqua,
 		},
 	})
 	if err != nil {
