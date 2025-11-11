@@ -50,3 +50,12 @@ wails build             # outputs to build/bin/Takeoff.app
 - **Calendar** — Two-week grid, day agenda, event drawer, keyboard shortcuts (`N` for new, `T` for today).
 - **Inbox** — Approval queue with mock diff preview for action plans.
 - **Settings** — Working hours, slot length, maximum focus hours, and deep work preference stored via Go backend.
+
+
+  "platform": {
+    "darwin": {
+      "appicon": {
+        "path": ""
+      }
+    }
+  }

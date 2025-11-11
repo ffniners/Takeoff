@@ -22,3 +22,18 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+node_modules/
+wails-app/frontend/node_modules/
+wails-app/frontend/dist/
+wails-app/frontend/wailsjs/
+
+# build output
+
+wails-app/build/
+wails-app/bin/
+wails-app/*.app
+*.exe
+*.dll
+*.so
+.DS_Store

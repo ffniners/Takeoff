@@ -1,0 +1,197 @@
+[
+  {
+    "id": "evt-launch-sync",
+    "title": "Weekly Launch Sync",
+    "start": "2025-11-09T09:00:00-08:00",
+    "end": "2025-11-09T10:00:00-08:00",
+    "allDay": false,
+    "status": "scheduled",
+    "priority": "P1",
+    "deadline": "2025-11-09T17:00:00-08:00",
+    "reminders": [
+      {
+        "id": "8f66c83b9ccdfbbf",
+        "offsetMinutes": -120,
+        "label": "-2h"
+      },
+      {
+        "id": "ff2ea116ae603bfd",
+        "offsetMinutes": -15,
+        "label": "-15m"
+      }
+    ],
+    "owner": "Avery",
+    "assignees": [
+      "Avery",
+      "Jordan",
+      "Maya"
+    ],
+    "project": "Liftoff",
+    "dependencies": [],
+    "description": "Critical go/no-go review for this sprint.",
+    "instructions": "Prep launch readiness checklist. AI: summarise blockers.",
+    "transcriptRefs": [
+      "launch-sync-2024-01"
+    ],
+    "createdAt": "2025-11-08T17:28:08.603528-08:00",
+    "updatedAt": "2025-11-08T17:28:08.603528-08:00"
+  },
+  {
+    "id": "evt-deep-work",
+    "title": "Prototype Deep Work",
+    "start": "2025-11-11T08:30:00-08:00",
+    "end": "2025-11-11T11:30:00-08:00",
+    "allDay": false,
+    "status": "in_progress",
+    "priority": "P2",
+    "reminders": [
+      {
+        "id": "bf6d8d78d492d8db",
+        "offsetMinutes": -60,
+        "label": "-1h"
+      }
+    ],
+    "owner": "Maya",
+    "assignees": [
+      "Maya"
+    ],
+    "project": "Orion",
+    "dependencies": [
+      "evt-launch-sync"
+    ],
+    "description": "Heads-down block to integrate telemetry feed.",
+    "instructions": "Future AI: flag risks if data drift \u003e2%.",
+    "transcriptRefs": [],
+    "createdAt": "2025-11-08T17:28:08.603528-08:00",
+    "updatedAt": "2025-11-08T17:28:08.603528-08:00"
+  },
+  {
+    "id": "evt-stakeholder-demo",
+    "title": "Stakeholder Demo",
+    "start": "2025-11-15T13:00:00-08:00",
+    "end": "2025-11-15T14:00:00-08:00",
+    "allDay": false,
+    "status": "proposed",
+    "priority": "P1",
+    "deadline": "2025-11-15T18:00:00-08:00",
+    "reminders": [
+      {
+        "id": "1e8d5d5c658673ea",
+        "offsetMinutes": -1440,
+        "label": "-24h"
+      },
+      {
+        "id": "547613f5025e1fcd",
+        "offsetMinutes": -30,
+        "label": "-30m"
+      }
+    ],
+    "owner": "Jordan",
+    "assignees": [
+      "Jordan",
+      "Dev"
+    ],
+    "project": "Habitat",
+    "dependencies": [
+      "evt-launch-sync"
+    ],
+    "description": "Demo of habitat planning dashboard.",
+    "instructions": "Draft follow-up email template. Future AI can summarize Q\u0026A.",
+    "transcriptRefs": [
+      "stakeholder-notes"
+    ],
+    "createdAt": "2025-11-08T17:28:08.603528-08:00",
+    "updatedAt": "2025-11-08T17:28:08.603528-08:00"
+  },
+  {
+    "id": "evt-team-offsite",
+    "title": "Team Offsite",
+    "start": "2025-11-13T00:00:00-08:00",
+    "end": "2025-11-14T00:00:00-08:00",
+    "allDay": true,
+    "status": "scheduled",
+    "priority": "P3",
+    "reminders": [
+      {
+        "id": "bb881e7b3c891001",
+        "offsetMinutes": -1440,
+        "label": "-24h"
+      }
+    ],
+    "owner": "People Ops",
+    "assignees": [
+      "Team"
+    ],
+    "project": "Team Health",
+    "dependencies": [],
+    "description": "Offsite planning day.",
+    "instructions": "AI: gather fun retro prompts later.",
+    "transcriptRefs": [],
+    "createdAt": "2025-11-08T17:28:08.603528-08:00",
+    "updatedAt": "2025-11-08T17:28:08.603528-08:00"
+  },
+  {
+    "id": "evt-cx-review",
+    "title": "Customer Insights Review",
+    "start": "2025-11-18T15:00:00-08:00",
+    "end": "2025-11-18T16:30:00-08:00",
+    "allDay": false,
+    "status": "scheduled",
+    "priority": "P2",
+    "reminders": [
+      {
+        "id": "097e6dd05e249713",
+        "offsetMinutes": -90,
+        "label": "-90m"
+      }
+    ],
+    "owner": "Dev",
+    "assignees": [
+      "Dev",
+      "Avery"
+    ],
+    "project": "Liftoff",
+    "dependencies": [
+      "evt-stakeholder-demo"
+    ],
+    "description": "Review support transcripts and churn signals.",
+    "instructions": "Flag AI summary gaps for automation.",
+    "transcriptRefs": [
+      "support-weekly"
+    ],
+    "createdAt": "2025-11-08T17:28:08.603528-08:00",
+    "updatedAt": "2025-11-08T17:28:08.603528-08:00"
+  },
+  {
+    "id": "evt-sprint-planning",
+    "title": "Sprint Planning",
+    "start": "2025-11-08T11:00:00-08:00",
+    "end": "2025-11-08T12:30:00-08:00",
+    "allDay": false,
+    "status": "done",
+    "priority": "P1",
+    "reminders": [
+      {
+        "id": "382439db218364f4",
+        "offsetMinutes": -30,
+        "label": "-30m"
+      }
+    ],
+    "owner": "Avery",
+    "assignees": [
+      "Avery",
+      "Jordan",
+      "Maya",
+      "Dev"
+    ],
+    "project": "Orion",
+    "dependencies": [],
+    "description": "Kick off sprint with backlog review.",
+    "instructions": "Capture retro actions for AI follow-up.",
+    "transcriptRefs": [
+      "planning-notes"
+    ],
+    "createdAt": "2025-11-08T17:28:08.603528-08:00",
+    "updatedAt": "2025-11-08T17:28:08.603528-08:00"
+  }
+]

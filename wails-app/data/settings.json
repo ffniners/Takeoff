@@ -1,0 +1,8 @@
+{
+  "timezone": "America/Los_Angeles",
+  "workdayStart": "08:00",
+  "workdayEnd": "17:00",
+  "defaultSlotMin": 60,
+  "maxHoursPerDay": 5,
+  "deepWorkAM": true
+}
